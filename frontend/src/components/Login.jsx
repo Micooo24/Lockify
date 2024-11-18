@@ -54,7 +54,7 @@ const Login = ({ onLoginSuccess }) => {
     validationSchema: signUpValidationSchema,
     onSubmit: async (values) => {
       try {
-        const response = await axios.post("http://127.0.0.1:8000/api/users/register", values);
+        const response = await axios.post("https://lockify.onrender.com/api/users/register", values);
         console.log("Sign Up successful:", response.data);
 
         const originalPassphrase = response.data.passphrase.original_passphrase; // Adjust if nested differently
@@ -77,7 +77,7 @@ const Login = ({ onLoginSuccess }) => {
     validationSchema: signInValidationSchema,
     onSubmit: async (values) => {
       try {
-        const response = await axios.post("http://127.0.0.1:8000/api/users/login", values);
+        const response = await axios.post("https://lockify.onrender.com/api/users/login", values);
         console.log("Sign In successful:", response.data);
 
         const { role, access } = response.data;
