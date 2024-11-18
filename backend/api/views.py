@@ -21,7 +21,7 @@ class UserCreateView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
 
-    def perform_create(self, serializer):
+    def post(self, serializer):
         # Assign 'user' role by default
         role, created = Role.objects.get_or_create(role='user')
         user = serializer.save(role=role)
