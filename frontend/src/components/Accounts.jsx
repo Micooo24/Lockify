@@ -9,7 +9,7 @@ import MenuCard from "../layouts/MenuCard";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import AccountPage from "../components/AccountPage"; // Corrected import path
+import AccountPage from "./AccountPage"; // Corrected import path
 
 const getCurrentUser = () => {
   const token = sessionStorage.getItem("accessToken");
