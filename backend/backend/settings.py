@@ -77,7 +77,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',  # Frontend origin
-    'https://lockify.onrender.com'
+    'https://lockify.onrender.com',
+    'https://lockify-five.vercel.app'
 ]
 
 CORS_ALLOW_CREDENTIALS = True  
