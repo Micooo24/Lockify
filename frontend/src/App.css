@@ -1,0 +1,15 @@
+
+.admin-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes the full height of the viewport */
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0; /* Adjust the background color if needed */
+}
+.overflow-auto {
+  overflow: auto;
+}

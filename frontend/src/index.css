@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200..700&family=Poppins:wght@100..900&family=Roboto+Condensed:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Kanit', sans-serif; /* Ensure correct font name here */
+}
